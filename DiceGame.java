@@ -1,7 +1,14 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class DiceGame{
     public static void main(String[] args){
+	System.out.println("What is your name?");
+	System.out.print(">");
+	Scanner sc = new Scanner(System.in);
+	String name = sc.nextLine(); 
+	System.out.println("Hello, "+name+"!");
+	
 	Random d1 = new Random();
 	Random d2 = new Random();
 	int d1a = 0;
@@ -27,10 +34,10 @@ public class DiceGame{
 	System.out.println("Total value: "+ ans);
 
 	if(ans>7){
-	    System.out.println("You won");
+	    System.out.println(name + " won");
 	}
 	else{
-	    System.out.println("You lost");
+	    System.out.println(name + " lost");
 	}
     }
 }
