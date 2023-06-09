@@ -25,5 +25,12 @@ public class DiceGame{
 	System.out.println("Dice 1: "+ d1a);
 	System.out.println("Dice 2: "+ d2a);
 	System.out.println("Total value: "+ ans);
+
+	if(ans>7){
+	    System.out.println("You won");
+	}
+	else{
+	    System.out.println("You lost");
+	}
     }
 }
